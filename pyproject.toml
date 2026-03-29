@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "media_pipeline_toolkit"
+version = "0.1.0"
+description = "A CLI for extracting audio, generating transcripts, and processing media."
+authors = [{ name = "Syed Abdulaziz" }]
+requires-python = ">=3.11"
+dependencies = [
+    "faster-whisper>=1.0.0",
+    "pydantic>=2.0.0",
+    "PyYAML>=6.0",
+]
+
+[project.scripts]
+media-pipeline-toolkit = "media_pipeline_toolkit.cli:main"
