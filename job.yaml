@@ -1,0 +1,9 @@
+job_type: transcribe-video
+input: sample-video/105.-1-Course-Wrap-up-1592k.mp4
+output_dir: outputs/config-test
+model: tiny
+language: en
+formats:
+  - txt
+  - srt
+chunk_seconds: 900
